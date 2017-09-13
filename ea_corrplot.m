@@ -48,7 +48,7 @@ for area=1:length(R_upd)
     end
     title([sub2space(fn),' (R=',sprintf('%.3f',R_upd(area)),', p=',sprintf('%.3f',p_upd(area)),').'],'FontSize',16,'FontName','Helvetica');
     xlabel(sub2space(labels{1}),'FontSize',16,'FontName','Helvetica');
-    ylabel(['Portion of VAT in'],'FontSize',16,'FontName','Helvetica');
+    ylabel(['Fibercounts'],'FontSize',16,'FontName','Helvetica');
     if nargin==4
         odir=get(handles.groupdir_choosebox,'String');
         ofname=[odir,description,'_',fn,'_',labels{1},'.png'];
